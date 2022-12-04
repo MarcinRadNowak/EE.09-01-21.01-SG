@@ -1,0 +1,8 @@
+select imie, nazwisko from zawodnik where id=4;
+
+select zespol, punkty, grupa from liga group by punkty desc;
+
+select zawodnik.id, zawodnik.nazwisko, pozycja.nazwa from zawodnik, pozycja where zawodnik.pozycja_id=pozycja.id AND zawodnik.id=3 or zawodnik.id=5;
+
+delete from rozgrywka;
+
